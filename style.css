@@ -1,0 +1,48 @@
+body
+{
+	font-family: "Jura",Cambria,monospace;
+	font-size: 22px;
+}
+input
+{
+	height: 32px;
+	width: 450px;
+	font-size: 22px;
+	font-family: "Jura",Cambria,monospace;
+}
+button
+{
+	border: 3px black solid;
+	color: white;
+	font-size: 32px;
+	background-color: cyan;
+	padding: 8px;
+	margin: 8px;
+	height: 100px;
+	width: 100px;
+}
+
+h1,p
+{
+	color: blue;
+}
+
+:fullscreen
+{
+	background-color: white;
+}
+
+:-moz-full-screen
+{
+	background-color: white;
+}
+
+:-ms-fullscreen
+{
+	background-color: white;
+}
+
+:-webkit-full-screen
+{
+	background-color: white;
+}

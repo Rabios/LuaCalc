@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+        <link href="style.css" rel="stylesheet"></link>
+        <title>LuaCalc App</title>
+    </head>
+    <body>
+        <center>
+            <h1>LuaCalc</h1>
+            <p>Calculator App Written In Lua Programming Language,By Rabia Alhaffar</p><br>
+            <input type="text" id="numinput"><br><br>
+            <div id="calculator-buttons">
+                <!-- Calculator Buttons -->
+                <button>1</button><button>2</button><button>3</button><button>+</button><br>
+                <button>4</button><button>5</button><button>6</button><button>-</button><br>
+                <button>7</button><button>8</button><button>9</button><button>*</button><br>
+                <button>0</button><button>%</button><button id="calc">=</button><button>/</button><br>
+            </div>
+        </center>
+    </body>
+    <script src="fengari-web.js"></script>
+    <script type="application/lua" async>
+        -- Created By Rabia Alhaffar In 24/March/2020
+        -- LuaCalc,Open Source Calculator As Web Application
+        -- Import DOM
+        local js = require("js")
+        local window = js.global
+        local document = window.document
+        local console = window.console
+        local navigator = window.navigator
+        local localStorage = window.localStorage
+        local JSON = window.JSON
+        
+        content = ""
+        buttons = document:getElementsByTagName("button")
+        
+        for b in pairs(buttons) do
+            buttons[b].onclick = function()
+                content = content..buttons[b].textContent
+                document:getElementById("numinput").value = tostring(content)
+            end
+        end
+        
+        document:getElementById("calc").onclick = function()
+            window:eval(content)
+            document:getElementById("numinput").value = "" 
+            document:getElementById("numinput").value = window:eval(content)
+        end
+
+        document:getElementById("numinput").onclick = function()
+            content = ""
+            document:getElementById("numinput").value = "" 
+        end
+
+        elem = document.body
+
+        toggle_full_screen = function()
+            if elem.requestFullscreen then elem:requestFullscreen() end
+        end
+
+        document.body.onclick = function()
+            toggle_full_screen()
+        end
+    </script>
+</html>
