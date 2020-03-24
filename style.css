@@ -31,23 +31,3 @@ a
 {
 	color: dodgerblue;
 }
-
-:fullscreen
-{
-	background-color: white;
-}
-
-:-moz-full-screen
-{
-	background-color: white;
-}
-
-:-ms-fullscreen
-{
-	background-color: white;
-}
-
-:-webkit-full-screen
-{
-	background-color: white;
-}
