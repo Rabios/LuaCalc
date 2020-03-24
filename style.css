@@ -22,9 +22,14 @@ button
 	width: 100px;
 }
 
-h1,p
+h1
 {
 	color: blue;
+}
+
+a
+{
+	color: dodgerblue;
 }
 
 :fullscreen

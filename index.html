@@ -8,7 +8,7 @@
     <body>
         <center>
             <h1>LuaCalc</h1>
-            <p>Calculator App Written In Lua Programming Language,By Rabia Alhaffar</p><br>
+            <p>Calculator App Written In <a href="https://lua.org">Lua Programming Language</a>,By Rabia Alhaffar</p><br>
             <input type="text" id="numinput"><br><br>
             <div id="calculator-buttons">
                 <!-- Calculator Buttons -->
@@ -51,16 +51,6 @@
         document:getElementById("numinput").onclick = function()
             content = ""
             document:getElementById("numinput").value = "" 
-        end
-
-        elem = document.body
-
-        toggle_full_screen = function()
-            if elem.requestFullscreen then elem:requestFullscreen() end
-        end
-
-        document.body.onclick = function()
-            toggle_full_screen()
         end
     </script>
 </html>
