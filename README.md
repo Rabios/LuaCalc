@@ -1,2 +1,2 @@
 # LuaCalc
-Simple Calculator Written In HTML5 And Lua Instead Of JavaScript,As Web Application
+Simple Calculator Written In HTML,CSS,And Lua Instead Of JavaScript,As Web Application
