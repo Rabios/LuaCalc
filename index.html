@@ -39,8 +39,9 @@
         end
         
         document:getElementById("calc").onclick = function()
+            content = document.getElementById("numinput").value
             window:eval(content)
-            document:getElementById("numinput").value = "" 
+            document:getElementById("numinput").value = ""
             document:getElementById("numinput").value = window:eval(content)
         end
 
