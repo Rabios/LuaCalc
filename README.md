@@ -1,8 +1,8 @@
 # LuaCalc
-Simple Calculator Written In HTML,CSS,And Lua Instead Of JavaScript,As Web Application
+Simple calculator written in HTML,CSS,And Lua instead of JavaScript,As web application
 
-> NOTES: If You Want To Clear Numbers In Calculator's Text Input Just Double Click The Text Input
+> NOTES: If you want to clear numbers in calculator's text input just double click the text input
 
-## This Web Application Powered By
+## Powered By
 1. [Lua](https://www.lua.org/)
 2. [Fengari](https://fengari.io)
