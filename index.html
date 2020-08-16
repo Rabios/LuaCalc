@@ -21,15 +21,15 @@
     </body>
     <script src="fengari-web.js"></script>
     <script type="application/lua" async>
-        -- Created By Rabia Alhaffar In 24/March/2020
-        -- LuaCalc,Open Source Calculator As Web Application
+        -- Created by Rabia Alhaffar in 24/March/2020
+        -- LuaCalc,Open-Source Calculator as web application
         local js = require("js")
         local window = js.global
         local document = window.document
         local console = window.console
         
-        content = ""
-        buttons = document:getElementsByTagName("button")
+        local content = ""
+        local buttons = document:getElementsByTagName("button")
         
         for b in pairs(buttons) do
             buttons[b].onclick = function()
